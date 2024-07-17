@@ -12,6 +12,12 @@
 <div class="container">
     <center>
     <h1>PLANES</h1>
+
+<!--    <a href="<?php echo base_url('nuevo_plan')?>" class="btn btn-primary">Nuevo Plan</a>
+ -->
+
+    
+    <a href="nuevo_plan" class="btn btn-success">Nuevo plan</a>
     </center>
 <table class="table table-border table-striped">
     <thead class="table-primary">
@@ -21,6 +27,7 @@
             <th>Pago mensual</th>
             <th>Cantidad minutos</th>
             <th>Cantidad de mensajes</th>
+            <th>Actualizar y eliminar</th>
 
         </tr>
     </thead>
@@ -55,6 +62,10 @@
                 <?php 
                 echo $plan['cantidad_mensajes'];
                 ?> 
+            </td>
+
+            <td>
+                Actualizar / Eliminar
             </td>
         </tr>
         <?php 

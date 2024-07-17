@@ -3,7 +3,7 @@
 namespace App\Controllers;
 use App\Models\LineasTelefonicasModel;
 
-class LineasTelefonicas extends BaseController
+class LineasTelefonicasController extends BaseController
 {
     public function index(): string
     {
