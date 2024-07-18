@@ -91,9 +91,9 @@ class ClientesController extends BaseController
         // print_r($datos);
         $clientes->insert($datos);
 
-        echo "Datos guardados";
+        echo "<br>Datos guardados";
 
-        echo "<a href='ver_clientes'>Regresar</a>";
+        echo "<br><a href='ver_clientes'>Regresar</a>";
 
     }
 }

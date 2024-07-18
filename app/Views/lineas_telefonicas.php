@@ -10,6 +10,10 @@
 <div class="container">
     <center>
     <h1>LINEAS TELEFONICAS</h1>
+
+    <a href="nueva_linea" class="btn btn-success">Nueva Linea</a>
+
+
     </center>
 <!--     <a href="<?php echo base_url('ver_planes');?>">Planes</a>
 -->

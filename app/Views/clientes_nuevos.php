@@ -1,3 +1,5 @@
+<!-- 
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,3 +63,66 @@
 
 </body>
 </html>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+<div class="login">
+  <div class="login-triangle"></div>
+  
+  <h2 class="login-header">Nuevo Cliente</h2>
+
+  <form class="login-container" action="agregar_cliente" method="post">
+    
+  <p>
+    <input type="number" id="txtId" name="txtId" class="form-control" autocomplete="off" placeholder="Ingrese el ID">
+  </p>
+
+  <p>
+  <input type="text" id="txtApellido" name="txtApellido" class="form-control" autocomplete="off" placeholder="Ingrese sus apellidos">
+  </p>
+
+    <p>
+    <input type="text" id="txtNombre" name="txtNombre" class="form-control" autocomplete="off" placeholder="Ingrese sus nombres">
+
+    </p>
+
+    <p>
+    <input type="text" id="txtCorreoElectronico" name="txtCorreoElectronico" class="form-control" autocomplete="off" placeholder="Ingrese su correo electronico"> 
+    </p>
+
+    <p>
+    <input type="text" id="txtCalle" name="txtCalle" class="form-control" autocomplete="off" placeholder="Ingrese la calle">
+    </p>
+
+
+    <p>
+    <input type="text" id="txtNumeroCasa" name="txtNumeroCasa" class="form-control" autocomplete="off" placeholder="Ingrese el número de casa">
+    </p>
+
+    <p>
+    <input type="number" id="txtZona" name="txtZona" class="form-control" autocomplete="off" placeholder="Ingrese la zona">
+
+    </p>
+
+
+    <p>
+    <input type="submit" class="btnGuardarPlan" name="btnGuardarPlan" class="form-control" value="Guardar Cliente">
+    </p>
+
+  </form>
+  
+</div>
+
+</body>
+</html>
+

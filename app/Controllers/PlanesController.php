@@ -66,9 +66,9 @@ class PlanesController extends BaseController
 
         $planes->insert($datos);
 
-        echo "Datos guardados";
+        echo "<br>Datos guardados";
 
-        echo "<a href='ver_planes'>Regresar</a>";
+        echo "<br><a href='ver_planes'>Regresar</a>";
 
     }
 }
