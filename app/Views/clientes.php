@@ -10,9 +10,10 @@
 <div class="container">
     <center>
     <h1>CLIENTES</h1>
+
+    <a href="nuevo_cliente" class="btn btn-success">Nuevo Cliente</a>
+
     </center>
-<!--     <a href="<?php echo base_url('ver_planes');?>">Planes</a>
--->
 <table class="table table-border table-striped">
     <thead class="table-primary">
         <tr>

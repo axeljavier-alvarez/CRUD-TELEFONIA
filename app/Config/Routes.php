@@ -14,5 +14,11 @@ $routes->get('ver_clientes', 'ClientesController::index');
 
 
 /* -------- RUTAS DE INSERTAR ------- */
+
 $routes->get('nuevo_plan', 'PlanesController::nuevoPlan');
 $routes->post('agregar_plan', 'PlanesController::agregarPlan');
+
+// Clientes
+$routes->get('nuevo_cliente', 'ClientesController::nuevoCliente');
+$routes->post('agregar_cliente', 'ClientesController::agregarCliente');
+
