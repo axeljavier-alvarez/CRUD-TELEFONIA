@@ -48,12 +48,11 @@
                             <a href="" class="btn btn-primary">
                             Actualizar
                             </a>
-                        </td>
-                        <td>
-                            <a href="eliminar_cliente/<?php echo $cliente['cliente_id'] ?>" class="btn btn-danger">
+                            <a href="eliminar_cliente/<?php echo $cliente['cliente_id'];?>" class="btn btn-danger">
                                 Eliminar
                             </a>
                         </td>
+                            
                     </tr>
                 <?php
                 endforeach;
@@ -63,5 +62,4 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-
 </html>

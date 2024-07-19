@@ -79,5 +79,9 @@ class ClientesController extends BaseController
     // OBJETO PARA ELIMINAR CLIENTE
     public function eliminarCliente($id=null){
         echo $id;
+        $clientes = new ClientesModel();
+        $clientes->delete(['cliente_id'=>$id]);
+        // nombre de la ruta es lo que se pone aqui
+        return redirect()->route('ver_clientes');
     }
 }

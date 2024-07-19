@@ -7,8 +7,8 @@ use CodeIgniter\Model;
 // cambiar el nombre al del archivo
 class ClientesModel extends Model
 {
-    protected $table         = 'clientes';
-    protected $primarykey = 'cliente_id';
+    protected $table = 'clientes';
+    protected $primaryKey = 'cliente_id';
     protected $allowedFields = [
         'cliente_id', 
         'apellido', 
