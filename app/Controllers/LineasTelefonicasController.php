@@ -15,10 +15,8 @@ class LineasTelefonicasController extends BaseController
 
 
     public function nuevaLinea()
-    {
-        
+    {  
         return view('lineas_telefonicas_nuevas');
-
     }
     
 
@@ -32,20 +30,9 @@ class LineasTelefonicasController extends BaseController
             'meses_atraso'=>$this->request->getVar('txtMesesDeAtraso'),
             'plan_id'=>$this->request->getVar('txtPlanId'),
             'cliente_id'=>$this->request->getVar('txtClienteId')
-
         ];
-        
         $lineas->insert($datos);
         echo "<br>Datos guardados correctamente";
-        echo "<a href='ver_lineas'>Regresar</a>";
-
-
-
-
+        echo "<br><a href='ver_lineas'>Regresar</a>";
     }
-
-
-    
-
-
 }

@@ -11,12 +11,10 @@
  
 <h1>Menú principal</h1>
 
-<a href="<?php echo base_url('ver_planes')?>" class="btn btn-primary">Planes</a>
+<a href="ver_planes" class="btn btn-primary">Planes</a>
+<a href="ver_lineas" class="btn btn-danger">Lineas telefonicas</a>
+<a href="ver_clientes" class="btn btn-success">Clientes</a>
 
-
-
-<a href="planes">Planes</a>
-<a href="lineas_telefonicas">Lineas telefonicas</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

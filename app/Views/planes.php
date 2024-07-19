@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/background.css">
 
 </head>
 <body>
     
 <div class="container">
     <center>
-    <h1>PLANES</h1>
-
+    <h1 class="titulo">PLANES</h1>
 <!--    <a href="<?php echo base_url('nuevo_plan')?>" class="btn btn-primary">Nuevo Plan</a>
  -->
-
-    
     <a href="nuevo_plan" class="btn btn-success">Nuevo plan</a>
+    <a href="http://localhost/fs2024/ci4_telefonia/public/" class="btn btn-primary">Ir al inicio</a>
     </center>
 <table class="table table-border table-striped">
     <thead class="table-primary">

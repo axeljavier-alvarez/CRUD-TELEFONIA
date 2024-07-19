@@ -28,3 +28,8 @@ $routes->get('nueva_linea', 'LineasTelefonicasController::nuevaLinea');
 
 $routes->post('agregar_linea', 'LineasTelefonicasController::agregarLinea');
 
+
+
+/* RUTA PARA ELIMINAR */
+$routes->get('eliminar_cliente/(:num)','ClientesController::eliminarCliente/$1');
+

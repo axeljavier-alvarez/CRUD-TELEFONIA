@@ -9,15 +9,12 @@ class ClientesController extends BaseController
     {
         $cliente = new ClientesModel();
         $datos['datos']=$cliente->findAll();
-
         return view('clientes', $datos);
     }
 
     public function nuevoCliente(): string
     {
-
-        return view('clientes_nuevos');
-        
+        return view('clientes_nuevos');   
     }
 
    /*  public function agregarCliente(): string
@@ -34,28 +31,20 @@ class ClientesController extends BaseController
 
     public function agregarCliente()
     {
-
         /* $id = $this->request->getVar('txtId');        
         echo "<br>Id: = " .$id;
-
         $apellido=$this->request->getVar('txtApellido');
         echo "<br>Apellido: = " .$apellido;
-
         $nombre = $this->request->getVar('txtNombre');        
         echo "<br>El pago = " .$nombre;
-
         $correo = $this->request->getVar('txtCorreoElectronico');        
         echo "<br>Minutos = " .$correo;
-
         $calle = $this->request->getVar('txtCalle');        
         echo "<br>Mensajes = " .$calle;
-
         $numeroCasa = $this->request->getVar('txtNumeroCasa');        
         echo "<br>Mensajes = " .$numeroCasa;
-
         $zona = $this->request->getVar('txtZona');        
         echo "<br>Zona = " .$zona;
-
         // crear objeto
         $clientes = new ClientesModel();
         $datos=[
@@ -66,17 +55,11 @@ class ClientesController extends BaseController
             'calle_avenida'=>$calle, 
             'no_casa'=>$numeroCasa,
             'zona'=>$zona
-
         ];
-
         $clientes->insert($datos);
-
         echo "Datos guardados";
-
         echo "<a href='ver_clientes'>Regresar</a>";*/
-
         $clientes = new ClientesModel();
-
         // simplificado
         $datos=[
             'cliente_id' => $this->request->getVar('txtId'),
@@ -87,13 +70,14 @@ class ClientesController extends BaseController
             'no_casa'=>$this->request->getVar('txtNumeroCasa'),
             'zona'=>$this->request->getVar('txtZona')
         ];
-
         // print_r($datos);
         $clientes->insert($datos);
-
         echo "<br>Datos guardados";
-
         echo "<br><a href='ver_clientes'>Regresar</a>";
+    }
 
+    // OBJETO PARA ELIMINAR CLIENTE
+    public function eliminarCliente($id=null){
+        echo $id;
     }
 }
