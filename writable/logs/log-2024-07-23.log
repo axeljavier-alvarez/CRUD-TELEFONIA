@@ -1,0 +1,1018 @@
+CRITICAL - 2024-07-23 14:40:31 --> ErrorException: Undefined variable $cliente
+[Method: GET, Route: ver_planes]
+in APPPATH\Views\planes.php on line 70.
+ 1 APPPATH\Views\planes.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cliente', 'C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\planes.php', 70)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\planes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('planes', [], true)
+ 5 APPPATH\Controllers\PlanesController.php(14): view('planes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:40:49 --> ErrorException: Undefined variable $cliente
+[Method: GET, Route: ver_planes]
+in APPPATH\Views\planes.php on line 73.
+ 1 APPPATH\Views\planes.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cliente', 'C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\planes.php', 73)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\planes.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('planes', [], true)
+ 5 APPPATH\Controllers\PlanesController.php(14): view('planes', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 14:44:50 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `pl...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pl...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pl...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pl...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('555')
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-07-23 14:44:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: GET, Route: eliminar_plan/555]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('555')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:44:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'555\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'555\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('555')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:44:50 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `planes`
+WHERE `id` IN (\'555\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'555\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'555\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('555')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 14:45:03 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `pl...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pl...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pl...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pl...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('555')
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-07-23 14:45:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: GET, Route: eliminar_plan/555]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('555')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:45:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'555\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'555\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('555')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:45:03 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `planes`
+WHERE `id` IN (\'555\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'555\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'555\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('555')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 14:45:06 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `pl...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pl...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pl...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pl...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('555')
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-07-23 14:45:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: GET, Route: eliminar_plan/555]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('555')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:45:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'555\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'555\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('555')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:45:06 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `planes`
+WHERE `id` IN (\'555\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'555\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'555\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('555')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 14:46:02 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `pl...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pl...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pl...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pl...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-07-23 14:46:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: GET, Route: eliminar_plan/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:46:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:46:02 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `planes`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 14:47:22 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `pl...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pl...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pl...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pl...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-07-23 14:47:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: GET, Route: eliminar_plan/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:47:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:47:22 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `planes`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:49:39 --> Error: Class "App\Controllers\ClientesModel" not found
+[Method: GET, Route: eliminar_plan/1]
+in APPPATH\Controllers\PlanesController.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 14:50:32 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `pl...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pl...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pl...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pl...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-07-23 14:50:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: GET, Route: eliminar_plan/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:50:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:50:32 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `planes`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 14:51:30 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `pl...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pl...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pl...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pl...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-07-23 14:51:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: GET, Route: eliminar_plan/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:51:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:51:30 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `planes`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 14:51:32 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `pl...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pl...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pl...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pl...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-07-23 14:51:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: GET, Route: eliminar_plan/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:51:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:51:32 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `planes`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 14:51:38 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `pl...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pl...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pl...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pl...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-07-23 14:51:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: GET, Route: eliminar_plan/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:51:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:51:38 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `planes`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 14:51:39 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `pl...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pl...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pl...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pl...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-07-23 14:51:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: GET, Route: eliminar_plan/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:51:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:51:39 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `planes`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 14:51:39 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `pl...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pl...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pl...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pl...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-07-23 14:51:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: GET, Route: eliminar_plan/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:51:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:51:39 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `planes`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 14:51:49 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `pl...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pl...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pl...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pl...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-07-23 14:51:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: GET, Route: eliminar_plan/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:51:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 14:51:49 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `planes`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `planes`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `planes`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\PlanesController.php(78): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->eliminarPlan('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 15:43:02 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `li...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `li...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `li...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `li...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1158): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\LineasTelefonicasController.php(42): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->eliminarLinea('41404301')
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2024-07-23 15:43:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+[Method: GET, Route: eliminar_linea/41404301]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `lineas_telefonicas`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\LineasTelefonicasController.php(42): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->eliminarLinea('41404301')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 15:43:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `lineas_telefonicas`
+WHERE `id` IN (\'41404301\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `lineas_telefonicas`
+WHERE `id` IN (\'41404301\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `lineas_telefonicas`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\LineasTelefonicasController.php(42): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->eliminarLinea('41404301')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 15:43:02 --> [Caused by] mysqli_sql_exception: Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `lineas_telefonicas`
+WHERE `id` IN (\'41404301\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `lineas_telefonicas`
+WHERE `id` IN (\'41404301\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `lineas_telefonicas`
+WHERE `id` IN (\'41404301\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2835): CodeIgniter\Database\BaseConnection->query('DELETE FROM `lineas_telefonicas`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\LineasTelefonicasController.php(42): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->eliminarLinea('41404301')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 16:10:57 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: modificar_plan]
+in SYSTEMPATH\BaseModel.php on line 1833.
+ 1 SYSTEMPATH\BaseModel.php(1833): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(997): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\PlanesController.php(106): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->modificarPlan()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 16:52:07 --> ParseError: syntax error, unexpected token "}", expecting ";" or "{"
+[Method: GET, Route: ver_lineas]
+in APPPATH\Controllers\LineasTelefonicasController.php on line 51.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Controllers\\LineasTelefonicasController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LineasTelefonicasController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LineasTelefonicasController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\LineasTelefonicasController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 16:56:42 --> ErrorException: Undefined array key "nombre"
+[Method: GET, Route: buscar_linea/41405507]
+in APPPATH\Views\form_modificar_linea.php on line 30.
+ 1 APPPATH\Views\form_modificar_linea.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\form_modificar_linea.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\form_modificar_linea.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('form_modificar_linea', [], true)
+ 5 APPPATH\Controllers\LineasTelefonicasController.php(51): view('form_modificar_linea', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->buscarLinea('41405507')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 16:57:08 --> ErrorException: Undefined array key "nombre"
+[Method: GET, Route: buscar_linea/41405507]
+in APPPATH\Views\form_modificar_linea.php on line 30.
+ 1 APPPATH\Views\form_modificar_linea.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\form_modificar_linea.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\form_modificar_linea.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('form_modificar_linea', [], true)
+ 5 APPPATH\Controllers\LineasTelefonicasController.php(51): view('form_modificar_linea', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->buscarLinea('41405507')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-23 17:11:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fs2024_telefonia`.`lineas_telefonicas`, CONSTRAINT `lineas_telefonicas_ibfk_1` FOREIGN KEY (`plan_id`) REFERENCES `planes` (`plan_id`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `lineas_...', 0)
+#1 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `lineas_...')
+#2 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `lineas_...')
+#3 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Database\BaseBuilder.php(2508): CodeIgniter\Database\BaseConnection->query('UPDATE `lineas_...', Array, false)
+#4 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\fs2024\ci4_telefonia\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\fs2024\ci4_telefonia\app\Controllers\LineasTelefonicasController.php(67): CodeIgniter\Model->update('41405507', Array)
+#8 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->modificarLinea()
+#9 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+#10 C:\xampp\htdocs\fs2024\ci4_telefonia\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2024\ci4_telefonia\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2024\ci4_telefonia\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-07-23 17:11:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`fs2024_telefonia`.`lineas_telefonicas`, CONSTRAINT `lineas_telefonicas_ibfk_1` FOREIGN KEY (`plan_id`) REFERENCES `planes` (`plan_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+[Method: POST, Route: modificar_linea]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2508): CodeIgniter\Database\BaseConnection->query('UPDATE `lineas_telefonicas` SET `no_telefono` = :no_telefono:, `fecha_pago` = :fecha_pago:, `meses_atraso` = :meses_atraso:, `plan_id` = :plan_id:, `cliente_id` = :cliente_id:
+WHERE `lineas_telefonicas`.`no_telefono` IN :lineas_telefonicas.no_telefono:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\LineasTelefonicasController.php(67): CodeIgniter\Model->update('41405507', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->modificarLinea()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 17:11:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`fs2024_telefonia`.`lineas_telefonicas`, CONSTRAINT `lineas_telefonicas_ibfk_1` FOREIGN KEY (`plan_id`) REFERENCES `planes` (`plan_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `lineas_telefonicas` SET `no_telefono` = \'41405507\', `fecha_pago` = \'127\', `meses_atraso` = \'0\', `plan_id` = \'3\', `cliente_id` = \'9\'
+WHERE `lineas_telefonicas`.`no_telefono` IN (\'41405507\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `lineas_telefonicas` SET `no_telefono` = \'41405507\', `fecha_pago` = \'127\', `meses_atraso` = \'0\', `plan_id` = \'3\', `cliente_id` = \'9\'
+WHERE `lineas_telefonicas`.`no_telefono` IN (\'41405507\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2508): CodeIgniter\Database\BaseConnection->query('UPDATE `lineas_telefonicas` SET `no_telefono` = :no_telefono:, `fecha_pago` = :fecha_pago:, `meses_atraso` = :meses_atraso:, `plan_id` = :plan_id:, `cliente_id` = :cliente_id:
+WHERE `lineas_telefonicas`.`no_telefono` IN :lineas_telefonicas.no_telefono:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\LineasTelefonicasController.php(67): CodeIgniter\Model->update('41405507', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->modificarLinea()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-23 17:11:17 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`fs2024_telefonia`.`lineas_telefonicas`, CONSTRAINT `lineas_telefonicas_ibfk_1` FOREIGN KEY (`plan_id`) REFERENCES `planes` (`plan_id`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `lineas_telefonicas` SET `no_telefono` = \'41405507\', `fecha_pago` = \'127\', `meses_atraso` = \'0\', `plan_id` = \'3\', `cliente_id` = \'9\'
+WHERE `lineas_telefonicas`.`no_telefono` IN (\'41405507\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `lineas_telefonicas` SET `no_telefono` = \'41405507\', `fecha_pago` = \'127\', `meses_atraso` = \'0\', `plan_id` = \'3\', `cliente_id` = \'9\'
+WHERE `lineas_telefonicas`.`no_telefono` IN (\'41405507\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `lineas_telefonicas` SET `no_telefono` = \'41405507\', `fecha_pago` = \'127\', `meses_atraso` = \'0\', `plan_id` = \'3\', `cliente_id` = \'9\'
+WHERE `lineas_telefonicas`.`no_telefono` IN (\'41405507\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2508): CodeIgniter\Database\BaseConnection->query('UPDATE `lineas_telefonicas` SET `no_telefono` = :no_telefono:, `fecha_pago` = :fecha_pago:, `meses_atraso` = :meses_atraso:, `plan_id` = :plan_id:, `cliente_id` = :cliente_id:
+WHERE `lineas_telefonicas`.`no_telefono` IN :lineas_telefonicas.no_telefono:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\LineasTelefonicasController.php(67): CodeIgniter\Model->update('41405507', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LineasTelefonicasController->modificarLinea()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LineasTelefonicasController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
