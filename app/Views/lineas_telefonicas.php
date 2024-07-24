@@ -5,35 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/paginaColor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 
 </head>
+<style>
+    a {
+        text-decoration: none;
+    }
+</style>
 
 <body>
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Telefonía
+      <i class="bi bi-telephone-outbound-fill"></i>
+      </label>
+      
+      <ul>
+        <li><a href="http://localhost/fs2024/ci4_telefonia/public">Inicio</a></li>
+        <li><a href="ver_planes">Planes</a></li>
+        <li><a href="ver_lineas">Lineas telefonicas</a></li>
+        <li><a href="ver_clientes">Ver Clientes</a></li>
+      </ul>
+    </nav>
+    <br>
+    <br>
     <div class="container">
         <center>
             <h1>LINEAS TELEFONICAS</h1>
 
-            <a href="nueva_linea" class="btn btn-success">
-                Nueva Linea
-                <i class="bi bi-journal-plus"></i>
+            <a href="nueva_linea" class="btn nuevoCliente">
+                Agregar nueva línea
+                <i class="bi bi-phone-vibrate"></i>
             </a>
-
-            <a href="http://localhost/fs2024/ci4_telefonia/public/" class="btn btn-primary">Ir al inicio</a>
 
         </center>
         <!--     <a href="<?php echo base_url('ver_planes'); ?>">Planes</a>
 -->
-        <table class="table table-border table-striped">
+        <br>
+        <table class="table table-border">
             <thead class="table-primary">
                 <tr>
-                    <th>No. Telefono</th>
-                    <th>Fecha Pago</th>
-                    <th>Meses atraso</th>
-                    <th>Plan ID</th>
-                    <th>Cliente ID</th>
-                    <th>ACCIONES</th>
+                    
+                    <td id="tituloNew">No. Telefono</td>
+                    <td id="tituloNew">Fecha Pago</td>
+                    <td id="tituloNew">Meses atraso</td>
+                    <td id="tituloNew">Plan ID</td>
+                    <td id="tituloNew">Cliente ID</td>
+                    <td id="tituloNew"><center>Acciones</center></td>
 
                 </tr>
             </thead>
@@ -71,15 +97,17 @@
                             ?>
                         </td>
                         <td>
-                            <a href="buscar_linea/<?php echo $linea['no_telefono']; ?>" class="btn btn-primary">
-                                Actualizar
-                                <i class="bi bi-dice-3-fill"></i>
+                            <center>
+                            <a href="buscar_linea/<?php echo $linea['no_telefono']; ?>" class="btn btn-outline-primary">
+                            <img src="https://cdn-icons-png.freepik.com/256/5625/5625789.png?semt=ais_hybrid" id="botonUpdate">
+
 
                             </a>
-                            <a href="eliminar_linea/<?php echo $linea['no_telefono']; ?>" class="btn btn-danger">
-                                Eliminar
-                                <i class="bi bi-trash"></i>
+                            <a href="eliminar_linea/<?php echo $linea['no_telefono']; ?>" class="btn btn-outline-danger">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1214/1214428.png" id="botonDelete">
                             </a>
+                            </center>
+                            
                         </td>
                     </tr>
                 <?php

@@ -53,7 +53,11 @@
                     <td id="tituloNew">Nombre completo</td>
                     <td id="tituloNew">Correo electrónico</td>
                     <td id="tituloNew">Calle avenida</td>
-                    <td id="tituloNew">Acciones</td>
+                    <td id="tituloNew">
+                        <center>
+                        Acciones
+                        </center>
+                    </td>
                 </tr>
             </thead>
             <tbody>
