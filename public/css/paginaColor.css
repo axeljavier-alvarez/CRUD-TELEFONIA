@@ -74,6 +74,7 @@ background-size: cover;
   #tituloNew{
     background-color: #0082e6;
     color: white;
+    font-weight: bold;
   }
   
   /* CLASES */
@@ -86,4 +87,11 @@ background-size: cover;
 
   }
 
+  #planTelefonico {
+    width: 30px;
+  }
   
+
+  #iconoTelefonia {
+    width: 35px;
+  }

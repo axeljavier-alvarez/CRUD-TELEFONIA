@@ -177,7 +177,7 @@
 
 
             <p>
-                <input type="submit" class="btn btn-success form-control" name="btnGuardarCambios" value="Guardar Cambios">
+                <input type="submit" class="btn btn-success form-control" name="btnGuardarCambios" value="Actualizar">
             </p>
 
             <p>

@@ -42,7 +42,7 @@
             <td>
             <a href="nuevo_cliente" class="btn nuevoCliente">Agregar nuevo cliente
             </td>
-            <i class="bi bi-person-add"></i>
+            <img src="https://cdn-icons-png.flaticon.com/512/7542/7542547.png" id="iconoTelefonia">
             </a>
         </center>
         <br>
@@ -66,9 +66,12 @@
                 ?>
                     <tr>
                         <td>
+                            <strong>
                             <?php
                             echo $cliente['cliente_id'];
                             ?>
+                            </strong>
+                            
                         </td>
                         <td>
                             <?php echo $cliente['nombre'] . " " . $cliente['apellido'] ?>

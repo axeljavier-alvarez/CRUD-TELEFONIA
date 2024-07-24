@@ -71,6 +71,12 @@
     <p>
     <input type="submit" class="btnGuardarCliente" name="btnGuardarCliente" class="form-control" value="Guardar Linea telefonica">
     </p>
+
+    <p>
+        <center>
+        ¿Desea volver? <a href="http://localhost/fs2024/ci4_telefonia/public/ver_lineas">Presione aca</a>
+        </center>
+    </p>
   </form>
 </div>
 </body>

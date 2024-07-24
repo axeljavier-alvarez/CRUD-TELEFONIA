@@ -43,7 +43,7 @@
 
             <a href="nueva_linea" class="btn nuevoCliente">
                 Agregar nueva línea
-                <i class="bi bi-phone-vibrate"></i>
+                <img src="https://cdn-icons-png.flaticon.com/512/1000/1000389.png" id="iconoTelefonia">
             </a>
 
         </center>
@@ -70,9 +70,13 @@
                 ?>
                     <tr>
                         <td>
+                            <strong>
                             <?php
                             echo $linea['no_telefono'];
                             ?>
+
+                            </strong>
+                            
                         </td>
                         <td>
                             <?php
@@ -109,6 +113,8 @@
                             </center>
                             
                         </td>
+
+                        
                     </tr>
                 <?php
                 endforeach;

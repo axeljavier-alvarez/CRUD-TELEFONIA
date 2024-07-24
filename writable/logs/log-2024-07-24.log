@@ -60,3 +60,31 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
 12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
 13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-24 17:15:14 --> ErrorException: Undefined array key "no_telefono"
+[Method: GET, Route: buscar_plan/1]
+in APPPATH\Views\form_modificar_plan.php on line 159.
+ 1 APPPATH\Views\form_modificar_plan.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "no_telefono"', 'C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\form_modificar_plan.php', 159)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\form_modificar_plan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('form_modificar_plan', [], true)
+ 5 APPPATH\Controllers\PlanesController.php(93): view('form_modificar_plan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->buscarPlan('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-24 17:17:09 --> ErrorException: Undefined array key "cliente_id"
+[Method: GET, Route: buscar_plan/1]
+in APPPATH\Views\form_modificar_plan.php on line 194.
+ 1 APPPATH\Views\form_modificar_plan.php(194): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cliente_id"', 'C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\form_modificar_plan.php', 194)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\fs2024\\ci4_telefonia\\app\\Views\\form_modificar_plan.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('form_modificar_plan', [], true)
+ 5 APPPATH\Controllers\PlanesController.php(93): view('form_modificar_plan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PlanesController->buscarPlan('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlanesController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
