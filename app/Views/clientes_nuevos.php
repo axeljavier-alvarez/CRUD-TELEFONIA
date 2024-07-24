@@ -119,6 +119,14 @@
     <input type="submit" class="btnGuardarPlan" name="btnGuardarPlan" class="form-control" value="Guardar Cliente">
     </p>
 
+    <p>
+        <center>
+        ¿Desea volver? <a href="http://localhost/fs2024/ci4_telefonia/public/ver_clientes">Presione aca</a>
+        </center>
+    </p>
+
+    
+
   </form>
   
 </div>
