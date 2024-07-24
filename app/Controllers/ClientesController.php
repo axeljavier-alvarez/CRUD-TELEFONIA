@@ -84,4 +84,31 @@ class ClientesController extends BaseController
         // nombre de la ruta es lo que se pone aqui
         return redirect()->route('ver_clientes');
     }
+
+    public function buscarCliente($id=null){
+        
+
+        $clientes = new ClientesModel();
+        $datos['datos']=$clientes->where('cliente_id', $id)->first();
+        return view('form_modificar_cliente', $datos);
+
+
+    }
+
+    public function modificarCliente(){
+        $datos=[
+            'cliente_id'=>$this->request->getVar('txtId'),
+            'apellido'=>$this->request->getVar('txtApellido'),
+            'nombre'=>$this->request->getVar('txtNombre'),
+            'correo_electronico'=>$this->request->getVar('txtCorreo'),
+            'calle_avenida'=>$this->request->getVar('txtCalleAvenida'),
+            'no_casa'=>$this->request->getVar('txtNumeroCasa'),
+            'zona'=>$this->request->getVar('txtZona'),
+        ];
+
+        $clientes = new ClientesModel();
+        $clientes->update($datos['cliente_id'], $datos);
+        return redirect()->route('ver_clientes');
+    }
+
 }
